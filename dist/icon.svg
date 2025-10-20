@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4A90E2" stroke="#2E5C8A" stroke-width="4"/>
+  
+  <!-- Scroll arrows (three layers showing speed) -->
+  <g fill="#FFFFFF" opacity="0.4">
+    <path d="M 64 30 L 74 40 L 54 40 Z"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.7">
+    <path d="M 64 45 L 74 55 L 54 55 Z"/>
+  </g>
+  <g fill="#FFFFFF">
+    <path d="M 64 60 L 74 70 L 54 70 Z"/>
+  </g>
+  
+  <!-- "Smart" lightning bolt -->
+  <path d="M 70 75 L 58 85 L 64 85 L 60 98 L 72 88 L 66 88 Z" fill="#FFD700" stroke="#FFA500" stroke-width="1.5"/>
+  
+  <!-- Speed lines -->
+  <line x1="40" y1="50" x2="48" y2="50" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="80" y1="50" x2="88" y2="50" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="40" y1="64" x2="48" y2="64" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="80" y1="64" x2="88" y2="64" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+</svg>

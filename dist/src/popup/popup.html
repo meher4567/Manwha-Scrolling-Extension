@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Scroll</title>
+  
+  <script type="module" crossorigin src="/popup.js"></script>
+  <link rel="modulepreload" crossorigin href="/modulepreload-polyfill.js">
+  <link rel="stylesheet" href="/popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>Smart Scroll</h1>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button id="dark-mode-toggle" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 16px;">🌙</button>
+        <label class="toggle-switch">
+          <input type="checkbox" id="enable-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="popup-content">
+      <div class="control-group">
+        <label for="speed-slider">Scroll Speed (Max: 600)</label>
+        <div class="preset-buttons" style="display: flex; gap: 6px; margin-bottom: 12px;">
+          <button class="preset-btn" data-preset="slow" style="flex: 1; padding: 6px; font-size: 12px; border: 1px solid #ddd; background: white; border-radius: 4px; cursor: pointer;">Slow (150)</button>
+          <button class="preset-btn" data-preset="normal" style="flex: 1; padding: 6px; font-size: 12px; border: 1px solid #ddd; background: white; border-radius: 4px; cursor: pointer;">Normal (250)</button>
+          <button class="preset-btn" data-preset="fast" style="flex: 1; padding: 6px; font-size: 12px; border: 1px solid #ddd; background: white; border-radius: 4px; cursor: pointer;">Fast (400)</button>
+          <button class="preset-btn" data-preset="turbo" style="flex: 1; padding: 6px; font-size: 12px; border: 1px solid #ddd; background: white; border-radius: 4px; cursor: pointer;">Turbo (550)</button>
+        </div>
+        <div class="slider-container">
+          <input type="range" id="speed-slider" min="10" max="600" value="50">
+          <span id="speed-value">50</span>
+          <span id="speed-adjustment" style="color: #666; font-size: 13px; margin-left: 4px;"></span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="auto-advance-toggle">
+          <span>Auto-advance to next chapter</span>
+        </label>
+      </div>
+
+      <div class="control-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="wait-images-toggle">
+          <span>Wait longer for images (slow sites)</span>
+        </label>
+      </div>
+
+      <div class="control-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="emergency-stop-toggle">
+          <span>Emergency stop on mouse shake</span>
+        </label>
+      </div>
+
+      <div class="control-group" style="border-top: 1px solid #ddd; padding-top: 8px; margin-top: 8px;">
+        <div style="font-size: 11px; color: #666; line-height: 1.4;">
+          🔎 <strong>Predictive Speed:</strong> Automatically adjusts based on upcoming text density
+        </div>
+      </div>
+      
+
+      <div class="quick-actions">
+        <button id="start-scroll" class="action-button primary">
+          Start Scrolling
+        </button>
+      </div>
+    </main>
+
+  </div>
+
+  
+</body>
+</html>
