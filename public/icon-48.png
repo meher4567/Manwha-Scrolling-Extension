@@ -1,0 +1,26 @@
+
+=================================
+ICON PLACEHOLDER
+=================================
+
+This is a placeholder for 48x48 icon.
+
+To generate actual PNG icons:
+
+Option 1 - Use online converter:
+1. Open public/icon.svg in browser
+2. Use https://svg2png.com or similar
+3. Convert to 48x48 PNG
+4. Save as icon-48.png
+
+Option 2 - Use sharp (recommended):
+1. Run: npm install sharp
+2. Create convert script
+3. Generate all sizes automatically
+
+Option 3 - Use GIMP/Photoshop:
+1. Open public/icon.svg
+2. Export as 48x48 PNG
+3. Save as icon-48.png
+
+=================================

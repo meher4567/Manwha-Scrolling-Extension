@@ -1,0 +1,42 @@
+{
+  "name": "smart-scroll",
+  "version": "0.1.0",
+  "description": "Intelligent browser extension for enhanced reading of long-form visual content",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,html}\""
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.2.0",
+    "@preact/preset-vite": "^2.10.2",
+    "@types/chrome": "^0.0.246",
+    "@types/jest": "^29.5.5",
+    "@types/webextension-polyfill": "^0.12.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vite-plugin-web-extension": "^3.2.0"
+  },
+  "dependencies": {
+    "@preact/signals": "^1.2.1",
+    "preact": "^10.18.1",
+    "webextension-polyfill": "^0.12.0"
+  }
+}
